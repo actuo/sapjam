@@ -66,19 +66,15 @@ function renderInfo() {
 //        html += '<div class="topic"><h4> ' + topics[i] + '</h4></div>';
 //    }
     if(url){
-    	frame_snap='yes';
+    	var frame_snap='<iframe width="100%" src="'+url+'" name="iframe_a" height="300"></iframe>';
+	document.getElementById('body').innerHTML = frame_snap;
     }
     else{
-    	frame_snap='no';
+    	var html = "";
+    	/** Create "Add topic" button to the footer */
+    	html += '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Topic</button>';
+    	document.getElementById('footer').innerHTML = html;
     }
- //   var frame_snap='<iframe width="100%" src="'+url+'" name="iframe_a" height="300"></iframe>';
-    //https://websmp201.sap-ag.de/~SAPIDP/002006825000000234912001E" name="iframe_a" height="300"></iframe>';
-    document.getElementById('body').innerHTML = frame_snap;
-    var html = "";
-    /** Create "Add topic" button to the footer */
-    html += '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Topic</button>';
-    document.getElementById('footer').innerHTML = html;
-    
     /** Adjust window size dynamically */
     gadgets.window.adjustHeight();
 }
