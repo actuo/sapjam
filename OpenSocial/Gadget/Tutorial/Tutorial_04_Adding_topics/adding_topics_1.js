@@ -23,8 +23,8 @@ function renderInfo() {
     if(url){
     	var frame_snap='<iframe width="100%" src="'+url+'" name="iframe_a" height="300"></iframe>';
 	document.getElementById('body').innerHTML = frame_snap;
-	var html = '<input type="text" id="textBox" value=""/><button id="updateURL" onclick="updateURL()">update Snapshot URL</button>';
-    	document.getElementById('footer').innerHTML = html;
+//	var html = '<input type="text" id="textBox" value=""/><button id="updateURL" onclick="updateURL()">update Snapshot URL</button>';
+//    	document.getElementById('footer').innerHTML = html;
     }
     else{
     	var html = '<input type="text" id="textBox" value=""/><button id="addURL" onclick="addURL()">Add Snapshot URL</button>';
