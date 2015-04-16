@@ -7,7 +7,7 @@ function addInput(){
 	var url = document.getElementById('textBox').value;
 	document.getElementById('textBox').value = '';
 	
-	// Submit everything to storage
+	// Submit url to storage
 	state.submitDelta({'snapshot':url});
 }
 
