@@ -65,9 +65,9 @@ function renderInfo() {
 //        var id = "topic"+i;
 //        html += '<div class="topic"><h4> ' + topics[i] + '</h4></div>';
 //    }
-//    frame_snap='<iframe width="100%" src="'+url+'" name="iframe_a" height="300"></iframe>';
+    var frame_snap='<iframe width="100%" src="'+url+'" name="iframe_a" height="300"></iframe>';
     //https://websmp201.sap-ag.de/~SAPIDP/002006825000000234912001E" name="iframe_a" height="300"></iframe>';
-    document.getElementById('body').innerHTML = url;
+    document.getElementById('body').innerHTML = frame_snap;
     
     var html = "";
     /** Create "Add topic" button to the footer */
