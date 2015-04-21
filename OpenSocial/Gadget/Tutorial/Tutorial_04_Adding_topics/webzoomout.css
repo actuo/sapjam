@@ -6,7 +6,12 @@
 		margin-right: auto;
 		width: 40%;
 		color: #5c5c5c;}
-#body {color: #5c5c5c;padding-left: 30px;}
+#body {
+    overflow:hidden;
+    border:1px solid orange;
+    height:722px;
+    width:662px;
+}
 #footer {padding: 30px;}
 #voteButton {width: 40px;height: 40px;padding: 2px;vertical-align:middle;}
 #thumbnail {width: 40px;height: 40px;padding: 2px;vertical-align:middle;}
@@ -25,9 +30,4 @@ iframe {
     height:1200px;
     width:1100px;
 }
-#snapshot {
-    overflow:hidden;
-    border:1px solid orange;
-    height:722px;
-    width:662px;
-}
+
