@@ -19,7 +19,6 @@ function renderInfo() {
     }
     var state = wave.getState();
     var url = state.get('snapshot');
-
     if(url){
     	var frame_snap='<iframe width="100%" src="'+url+'" name="iframe_a" height="300"></iframe>';
 	document.getElementById('body').innerHTML = frame_snap;
