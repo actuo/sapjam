@@ -23,7 +23,7 @@ function renderInfo() {
     if(url){
     	var frame_snap='<iframe width="100%" src="'+url+'" name="iframe_a" height="300"></iframe>';
 	document.getElementById('body').innerHTML = frame_snap;
-	document.getElementById('link').innerHTML ='<a href="' +url +'" target="_blank">Snapshot URL:</a>';
+	document.getElementById('link').innerHTML ='<a href="' +url +'" target="_blank">Snapshot URL:'+url +'</a>';
 	var html = '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">update Snapshot URL</button>';
     	document.getElementById('footer').innerHTML = html;
     }
